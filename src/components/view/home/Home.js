@@ -10,7 +10,7 @@ export default function Home() {
           <img
             src={image}
             style={{
-              width: "100%",
+              width: "100vw",
               height: "100%",
             }}
           />
@@ -31,27 +31,9 @@ export default function Home() {
         <p style={{ color: "#295943", fontWeight: "bold" }}>top destination</p>
         <p style={{ fontSize: 27, fontWeight: "bold" }}>Discover your love</p>
       </div>
-      <div
-        style={{
-          margin: "0px 150px",
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          gap: 20,
-          alignItems: "center",
-        }}
-      >
+      <div className={styles.card}>
         {Top_destination.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: "white",
-              width: 390,
-              padding: 30,
-              borderRadius: 10,
-              boxShadow: "0.5px 0.5px 8px 5px rgba(168, 167, 171, 0.5)",
-            }}
-          >
+          <div key={index} className={styles.card_content}>
             <img
               src={item.image}
               alt="error"
@@ -70,26 +52,10 @@ export default function Home() {
         </p>
       </div>
 
-      <div
-        style={{
-          margin: "0px 150px",
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          gap: 30,
-          justifyContent: "space-between",
-        }}
-      >
+      <div className={styles.card}>
         {Testimonial.map((data, index) => (
-          <div key={index} style={{ width: 390, padding: 15 }}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 20,
-                marginBottom: 20,
-              }}
-            >
+          <div key={index} className={styles.content_testimont}>
+            <div>
               <img
                 src={data.profile}
                 alt="error"
