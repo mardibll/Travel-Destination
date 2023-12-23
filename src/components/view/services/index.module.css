@@ -65,6 +65,7 @@ h6 p {
   }
 }
 .card {
+
   position: relative;
   width: 350px;
   &:hover {
@@ -135,7 +136,7 @@ h6 p {
   height: 100%;
   display: flex;
   align-items: center;
- 
+
   gap: 20px;
   justify-content: space-between;
   @media (max-width: 919px) {
@@ -161,14 +162,13 @@ h6 p {
     background-color: navy;
     margin-left: 0px;
     width: 100%;
-   
-   p{
-    overflow: hidden;
-    text-overflow: ellipsis; 
-    line-height: 1em;
-    max-height: 6.1em; 
-   }
-    
+
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1em;
+      max-height: 6.1em;
+    }
   }
   /* @media (min-width: 921px) and (max-width: 1029px) {
     max-width: 45%;
@@ -197,7 +197,6 @@ h6 p {
 }
 
 .card_right {
-
   width: 50%;
   margin-right: 150px;
   @media (min-width: 920px) and (max-width: 1029px) {
@@ -206,7 +205,6 @@ h6 p {
   @media (max-width: 919px) {
     margin-right: 0px;
     width: 100%;
-  
   }
 }
 .desc_right {
@@ -218,7 +216,7 @@ h6 p {
   align-items: center;
   flex-direction: column;
   background-color: white;
-  @media (max-width:559px) {
+  @media (max-width: 559px) {
     gap: 5px;
     flex-direction: row;
     h1 {

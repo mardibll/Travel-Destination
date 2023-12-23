@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../../../images/home.png";
 import { Testimonial, Top_destination } from "../../storage/db_home";
 import styles from "./style.module.css";
+import { IoSearch } from "react-icons/io5";
 export default function Home() {
+  const [inputType, setInputType] = useState("text");
   return (
     <div>
       <div className={styles.size_absolut}>
@@ -16,13 +18,31 @@ export default function Home() {
           />
           <div className={styles.explore}>
             <div className={styles.explore_content}>
-              <h2 style={{}}>Explore the world with a smile</h2>
+              <h2>Explore the world with a smile</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor rhoncus dolor purus non enim praesent elementum
                 facilisis leo,
               </p>
+              {/* <div className={styles.search}>
+                <input type="text" placeholder="City or Destination" />
+                <input
+                  onFocus={() => setInputType("date")}
+                  type={inputType}
+                  placeholder="Date of stay"
+                  style={{}}
+                />
+                <input type="number" placeholder="Person" style={{}} />
+                <button
+                  style={{
+                    width: 120,
+                    backgroundColor:"red"
+                  }}
+                >
+                  Find Trip Now <IoSearch />
+                </button>
+              </div> */}
             </div>
           </div>
         </div>

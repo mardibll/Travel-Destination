@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  align-items: center;
+  position: relative;
+  z-index: 99999;
+}
+.cltrue {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: #43b97f;
+  }
+}
+.clfalse {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  &:hover {
+    color: #43b97f;
+  }
+}
+.modal_right {
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  transform: translateX(37%);
+  /* transition: transform 0.3s ease-out; */
+}
+
+.modal_right.show {
+  /* transform: translateX(0); */
+}

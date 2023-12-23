@@ -1,0 +1,91 @@
+.card {
+  padding: 30px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: self-start;
+  justify-content: space-between;
+  gap: 40px;
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+  @media (max-width: 640px) {
+    justify-content: center;
+    padding: 30px 20px;
+  }
+}
+.card_content {
+  line-height: 25px;
+  width: 480px;
+  padding: 10px;
+  border-radius: 10px;
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0.5px 0.5px 8px 5px rgba(168, 167, 171, 0.5);
+    img {
+      transform: scale(0.9);
+    }
+  }
+}
+.text_title {
+  text-align: center;
+  line-height: 1.5;
+  padding: 50px;
+  @media (max-width: 640px) {
+    padding: 50px 0px;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  @media (max-width: 960px) {
+    justify-content: center;
+    gap: 10px;
+  }
+  @media (max-width: 640px) {
+    gap: 1px;
+  }
+}
+.button {
+  background: none;
+  border: none;
+  height: 50px;
+  width: 125px;
+  font-family: "poppints";
+  cursor: pointer;
+  &:hover {
+    color: #43b97f;
+  }
+  @media (max-width: 960px) {
+    width: 110px;
+  }
+  @media (max-width: 640px) {
+    height: 35px;
+    width: 60px;
+    font-size: 10px;
+  }
+}
+
+.activeButton {
+  background-color: #43b97f;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 125px;
+  color: white;
+  font-size: 16px;
+  font-family: "poppints";
+  @media (max-width: 960px) {
+    width: 110px;
+  }
+  @media (max-width: 640px) {
+    height: 35px;
+    width: 60px;
+    font-size: 10px;
+  }
+}

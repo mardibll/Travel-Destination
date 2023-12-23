@@ -12,6 +12,7 @@
   width: 550px;
   text-align: center;
   color: white;
+
   @media (max-width: 640px) {
     h2 {
       font-size: 16px;
@@ -20,6 +21,18 @@
       font-size: 13px;
     }
     width: 95%;
+  }
+  /* background-color: red; */
+}
+.search {
+  background: white;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  input {
+    border: none;
+    width: 120px;
   }
 }
 .size_absolut {
