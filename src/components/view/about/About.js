@@ -17,16 +17,14 @@ export default function About() {
           {offer.map((item, index) => (
             <div key={index} style={{}}>
               <span> {item.icon}</span>
-              <h6 >{item.title}</h6>
+              <h6>{item.title}</h6>
               <p> {item.description}</p>
             </div>
           ))}
         </div>
         <div className={style.about}>
           <div>
-            <h3>
-              {about.title}
-            </h3>
+            <h3>{about.title}</h3>
             <p>{about.description}</p>
           </div>
           <img src={about.image} alt="error" />
@@ -40,8 +38,10 @@ export default function About() {
           {teams.map((data, x) => (
             <div key={x}>
               <img src={data.profil} alt="error" />
-              <p style={{ fontSize: 21, fontWeight: 500 }}>{data.name}</p>
-              <p style={{ fontSize: 16 }}>{data.skill}</p>
+              <h6>{data.name}</h6>
+              <p>{data.skill}</p>
+              {/* <p style={{ fontSize: 21, fontWeight: 500 }}>{data.name}</p> */}
+              {/* <p style={{ fontSize: 16 }}>{data.skill}</p>  */}
             </div>
           ))}
         </div>

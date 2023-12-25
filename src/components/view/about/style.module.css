@@ -44,16 +44,15 @@ h6 {
     p {
       font-size: 16px;
     }
-    background-color: red;
+    /* background-color: red; */
   }
   @media (max-width: 640px) {
     gap: 25px;
     span {
       font-size: 60px;
     }
-    background-color: blue;
+    /* background-color: blue; */
     h6 {
-    
       font-size: 8px;
     }
     p {
@@ -91,10 +90,10 @@ h6 {
       width: 250px;
       height: 300px;
     }
-    background-color: red;
+    /* background-color: red; */
   }
   @media (max-width: 640px) {
-    margin: 20px 0px;
+    margin: 10px 0px;
     img {
       width: 130px;
       height: 150px;
@@ -104,13 +103,13 @@ h6 {
       font-size: 15px;
     }
     p {
-      background-color: red;
-      max-height: 10em;
-      font-size: 12px;
+      /* background-color: red; */
+      max-height: 7em;
+      font-size: 14px;
       line-height: 11px;
       overflow: hidden;
     }
-    background-color: blue;
+    /* background-color: blue; */
   }
 }
 
@@ -130,14 +129,22 @@ h6 {
       width: 180px;
       height: 220px;
     }
-    background-color: red;
+    /* background-color: red; */
   }
   @media (max-width: 640px) {
-    img {
-      width: 130px;
-      height: 220px;
+    padding: 5px 0px;
+    h6{
+      font-size: 7px;
     }
-    background-color: blue;
+    p{
+      font-size: 6px;
+    }
+    gap: 0px;
+    img {
+      width: 60px;
+      height: 100px;
+    }
+    /* background-color: blue; */
   }
 }
 
@@ -156,12 +163,12 @@ h6 {
     span {
       font-size: 100px;
     }
-    background-color: red;
+    /* background-color: red; */
   }
   @media (max-width: 640px) {
     gap: 5px;
     padding: 0px 10px;
-    background-color: blue;
+    /* background-color: blue; */
     span {
       font-size: 50px;
     }
