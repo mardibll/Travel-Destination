@@ -25,7 +25,7 @@ export default function Header() {
         <h2 style={{ color: path ? "white" : "#295943" }}> travelaja</h2>
       </div>
 
-      <nav
+      {/* <nav
         style={{
           display: "flex",
           width: "60%",
@@ -50,7 +50,7 @@ export default function Header() {
         <Link className={path ? style.cltrue : style.clfalse} to="/services">
           Contact
         </Link>
-      </nav>
+      </nav> */}
 
       <div style={{ display: "flex", alignItems: "center", gap: 13 }}>
         <img
