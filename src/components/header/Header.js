@@ -25,14 +25,14 @@ export default function Header() {
         <h2 style={{ color: path ? "white" : "#295943" }}> travelaja</h2>
       </div>
 
-      {/* <nav
+      <nav
         style={{
           display: "flex",
           width: "60%",
           justifyContent: "space-between",
         }}
       >
-        <Link className={path ? style.cltrue : style.clfalse} to="/">
+        {/* <Link className={path ? style.cltrue : style.clfalse} to="/">
           Home
         </Link>
         <Link className={path ? style.cltrue : style.clfalse} to="/news">
@@ -43,17 +43,17 @@ export default function Header() {
         </Link>
         <Link className={path ? style.cltrue : style.clfalse} to="/news">
           News
-        </Link>
+        </Link> */}
         <Link className={path ? style.cltrue : style.clfalse} to="/about">
           About Us
         </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/services">
+        {/* <Link className={path ? style.cltrue : style.clfalse} to="/services">
           Contact
-        </Link>
-      </nav> */}
+        </Link> */}
+      </nav>
 
       <div style={{ display: "flex", alignItems: "center", gap: 13 }}>
-        <img
+        {/* <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Indonesia_%28physical_version%29.svg/2560px-Flag_of_Indonesia_%28physical_version%29.svg.png"
           alt="error"
           style={{ height: 20, width: 20, borderRadius: 100 }}
@@ -68,7 +68,7 @@ export default function Header() {
             borderRadius: 100,
             cursor: "pointer",
           }}
-        />
+        /> */}
 
         {/* <FiAlignJustify style={{ fontSize: 30 }} onClick={handleShow} />
         <Modal show={show} onHide={handleClose} className={style.modal_right}>
