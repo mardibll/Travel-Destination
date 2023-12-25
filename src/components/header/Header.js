@@ -44,7 +44,7 @@ export default function Header() {
         <Link className={path ? style.cltrue : style.clfalse} to="/news">
           News
         </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/">
+        <Link className={path ? style.cltrue : style.clfalse} to="/about">
           About Us
         </Link>
         <Link className={path ? style.cltrue : style.clfalse} to="/services">
