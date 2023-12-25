@@ -9,7 +9,7 @@ export default function About() {
       <div className={style.container}>
         <div style={{ textAlign: "center", marginTop: 70 }}>
           <h3 style={{ fontWeight: "bold" }}>Why Choose Us ?</h3>
-          <p style={{ fontSize: 18 }}>
+          <p style={{ fontSize: 16 }}>
             These popular destinations have a lot to offer
           </p>
         </div>
