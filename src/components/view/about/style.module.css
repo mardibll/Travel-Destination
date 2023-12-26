@@ -104,10 +104,10 @@ h6 {
     }
     p {
       /* background-color: red; */
-      max-height: 7em;
-      font-size: 14px;
+      /* max-height: 15em; */
+      font-size: 7px;
       line-height: 11px;
-      overflow: hidden;
+      /* overflow: hidden; */
     }
     /* background-color: blue; */
   }

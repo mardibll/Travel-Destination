@@ -40,8 +40,8 @@ export default function About() {
               <img src={data.profil} alt="error" />
               <h6>{data.name}</h6>
               <p>{data.skill}</p>
-              {/* <p style={{ fontSize: 21, fontWeight: 500 }}>{data.name}</p> */}
-              {/* <p style={{ fontSize: 16 }}>{data.skill}</p>  */}
+              <p style={{ fontSize: 21, fontWeight: 500 }}>{data.name}</p>
+              <p style={{ fontSize: 16 }}>{data.skill}</p> 
             </div>
           ))}
         </div>
