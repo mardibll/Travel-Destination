@@ -58,6 +58,7 @@
 }
 .card {
   padding: 0px 150px;
+  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -90,6 +91,7 @@
   padding: 15px;
   cursor: pointer;
   border-radius: 5px;
+
   &:hover {
     background-color: #43b97f;
   }

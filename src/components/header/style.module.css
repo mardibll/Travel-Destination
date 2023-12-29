@@ -24,13 +24,12 @@
   }
 }
 .modal_right {
+  background-color: transparent;
+  padding-right: 200px;
+  margin-top: 40px;
   /* position: fixed; */
-  top: 0;
-  right: 0;
-  transform: translateX(37%);
+  /* top: 30px;
+  right: 10px; */
+  transform: translateX(54%);
   /* transition: transform 0.3s ease-out; */
-}
-
-.modal_right.show {
-  /* transform: translateX(0); */
 }

@@ -6,11 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Modal } from "react-bootstrap";
 export default function Header() {
   const [show, setShow] = useState(false);
-
+  const [togle, settogle] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(!show);
   const [path, setpath] = useState(false);
-
   let location = useLocation();
   useEffect(() => {
     if (location.pathname == "/") {
@@ -18,6 +17,14 @@ export default function Header() {
     } else {
       setpath(null);
     }
+    const handleResize = () => {
+      settogle(window.innerWidth <= 800);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [location]);
   return (
     <div className={style.container}>
@@ -25,32 +32,36 @@ export default function Header() {
         <h2 style={{ color: path ? "white" : "#295943" }}> travelaja</h2>
       </div>
 
-      <nav
-        style={{
-          display: "flex",
-          width: "60%",
-          justifyContent: "space-between",
-        }}
-      >
-        <Link className={path ? style.cltrue : style.clfalse} to="/">
-          Home
-        </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/news">
-          Discover
-        </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/services">
-          Services
-        </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/news">
-          News
-        </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/about">
-          About Us
-        </Link>
-        <Link className={path ? style.cltrue : style.clfalse} to="/services">
-          Contact
-        </Link>
-      </nav>
+      {togle ? (
+        false
+      ) : (
+        <nav
+          style={{
+            display: "flex",
+            width: "60%",
+            justifyContent: "space-between",
+          }}
+        >
+          <Link className={path ? style.cltrue : style.clfalse} to="/">
+            Home
+          </Link>
+          <Link className={path ? style.cltrue : style.clfalse} to="/news">
+            Discover
+          </Link>
+          <Link className={path ? style.cltrue : style.clfalse} to="/services">
+            Services
+          </Link>
+          <Link className={path ? style.cltrue : style.clfalse} to="/news">
+            News
+          </Link>
+          <Link className={path ? style.cltrue : style.clfalse} to="/about">
+            About Us
+          </Link>
+          <Link className={path ? style.cltrue : style.clfalse} to="/services">
+            Contact
+          </Link>
+        </nav>
+      )}
 
       <div style={{ display: "flex", alignItems: "center", gap: 13 }}>
         <img
@@ -70,9 +81,11 @@ export default function Header() {
           }}
         />
 
-        {/* <FiAlignJustify style={{ fontSize: 30 }} onClick={handleShow} />
+        {togle && (
+          <FiAlignJustify style={{ fontSize: 30 }} onClick={handleShow} />
+        )}
         <Modal show={show} onHide={handleClose} className={style.modal_right}>
-          <Modal.Body>y
+          <Modal.Body style={{}}>
             <nav
               style={{
                 display: "flex",
@@ -107,16 +120,7 @@ export default function Header() {
               </Link>
             </nav>
           </Modal.Body>
-        </Modal> */}
-
-        {/* <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-              <Button variant="primary" onClick={handleClose}>
-                Save Changes
-              </Button>
-            </Modal.Footer> */}
+        </Modal>
       </div>
     </div>
   );

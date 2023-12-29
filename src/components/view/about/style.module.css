@@ -152,6 +152,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   padding: 0px 50px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 15%;
   text-align: center;
