@@ -1,36 +1,20 @@
 import React from "react";
-import styles from "./style.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import style from "./style.module.css";
 export default function Footer() {
   return (
-    <div
-      style={{
-        backgroundColor: "#295943",
-        padding: 40,
-        flex: 1,
-        color: "white",
-        bottom: 0,
-        zIndex:99999
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ width: 300 }}>
+    <div className={style.container}>
+      <div className={style.menu}>
+        <div className={style.about}>
           <h2>travelaja</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor rhoncus dolor purus non enim praesent elementum facilisis
-            leo, vel
+            Travelaja adalah jenis aplikasi web yang digunakan untuk membantu
+            klien merencanakan, memesan, dan mengelola perjalanan mereka.
+            Aplikasi ini terutama berisi berbagai rekomendasi destinasi wisata
+            menarik.
           </p>
         </div>
-        <div style={{ width: 300 }}>
+        <div className={style.card}>
           <h4>links</h4>
           <p>Discover</p>
           <p>Special Deals</p>
@@ -38,7 +22,7 @@ export default function Footer() {
           <p>Community</p>
           <p>About Us</p>
         </div>
-        <div style={{ width: 300 }}>
+        <div className={style.card}>
           <h4>Services</h4>
           <p>About Us</p>
           <p>Blog & Articles</p>
@@ -46,7 +30,7 @@ export default function Footer() {
           <p>Privacy Policy</p>
           <p>Contact Us</p>
         </div>
-        <div style={{ width: 300 }}>
+        <div className={style.card}>
           <h4>Contact</h4>
           <p>Address: Jl.Codelaras No.205A</p>
           <p>Kediri, Pare AG17</p>

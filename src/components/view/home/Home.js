@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import image from "../../../images/home.png";
 import { Testimonial, Top_destination } from "../../storage/db_home";
 import styles from "./style.module.css";
 import { IoSearch } from "react-icons/io5";
 export default function Home() {
   const [inputType, setInputType] = useState("text");
+
   return (
     <div>
-      <div className={styles.size_absolut}>
+      <div className={styles.absolut}>
         <div className={styles.content}>
           <img
             src={image}
@@ -20,10 +21,10 @@ export default function Home() {
             <div className={styles.explore_content}>
               <h2>Explore the world with a smile</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-                urna, porttitor rhoncus dolor purus non enim praesent elementum
-                facilisis leo,
+                Travelaja adalah jenis aplikasi web yang digunakan untuk
+                membantu klien merencanakan, memesan, dan mengelola perjalanan
+                mereka. Aplikasi ini terutama berisi berbagai rekomendasi
+                destinasi wisata menarik.
               </p>
               {/* <div className={styles.search}>
                 <input type="text" placeholder="City or Destination" />
@@ -47,7 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div style={{ textAlign: "center", padding: 50 }}>
+      <div style={{ textAlign: "center",paddingTop:50 }}>
         <p style={{ color: "#295943", fontWeight: "bold" }}>top destination</p>
         <p style={{ fontSize: 27, fontWeight: "bold" }}>Discover your love</p>
       </div>
@@ -65,7 +66,8 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div style={{ textAlign: "center", margin: "120px 0px 30px 0px" }}>
+
+      <div style={{ textAlign: "center", margin: "50px 0px 30px 0px" }}>
         <p style={{ color: "#295943", fontWeight: "bold" }}>Testimonial</p>
         <p style={{ fontSize: 27, fontWeight: "bold" }}>
           What they say about us

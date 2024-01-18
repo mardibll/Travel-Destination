@@ -10,3 +10,64 @@ h4 {
 i {
   margin-right: 9px;
 }
+@media screen and (min-device-width: 1025px) {
+  .container {
+    background-color: #295943;
+    color: white;
+    padding: 40px 80px;
+  }
+  .card {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .about {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+  .container {
+    background-color: #295943;
+    color: white;
+    padding: 40px 50px;
+  }
+  .card {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+  .about {
+    width: 800px;
+    margin-bottom: 50px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-device-width: 600px) {
+  .container {
+    background-color: #295943;
+    color: white;
+    padding: 40px 20px;
+  }
+  .card {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}

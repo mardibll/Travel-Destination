@@ -56,13 +56,7 @@ export const visit = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
   },
-  {
-    objektif: "Water City Dreams",
-    image: require("../../images/scrv3.png"),
-    createdAt: "September 18, 2022",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
-  },
+
 ];
 export const holiday = [
   {

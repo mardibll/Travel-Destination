@@ -25,7 +25,7 @@ export default function News() {
                 index === activeButton ? styles.activeButton : styles.button
               }
             >
-             {nav.menu}
+              {nav.menu}
             </button>
           </div>
         ))}
