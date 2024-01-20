@@ -105,10 +105,10 @@ export default function Header() {
               >
                 Services
               </Link>
-              <Link className={style.clfalse} to="/news" onClick={handleClose}>
+              <Link className={style.clfalse} to="/services" onClick={handleClose}>
                 News
               </Link>
-              <Link className={style.clfalse} to="/" onClick={handleClose}>
+              <Link className={style.clfalse} to="/about" onClick={handleClose}>
                 About Us
               </Link>
               <Link
