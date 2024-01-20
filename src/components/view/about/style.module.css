@@ -108,13 +108,14 @@ h6 {
 @media (max-device-width: 600px) {
   .card {
     padding: 0px 30px;
+    margin-bottom: 0px;
   }
   .content_chose {
     p {
-      font-size: 12.4px;
+      font-size: 8px;
     }
     h6 {
-      font-size: 10.9px;
+      font-size: 9.6px;
     }
     span {
       font-size: 45px;
@@ -127,6 +128,7 @@ h6 {
     overflow: hidden;
   }
   .about_picture {
+    background-color: #43b97f;
     margin-bottom: 20px;
     width: 100%;
     max-width: 100%;
@@ -142,16 +144,17 @@ h6 {
     max-width: 19%;
     line-height: 20px;
     h6 {
-      font-size: 9px;
+      font-size: 8px;
     }
     p {
-      font-size: 7.1px;
+      font-size: 6.6px;
     }
   }
   .footer {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     span {
       font-size: 60px;
     }
