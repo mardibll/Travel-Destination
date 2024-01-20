@@ -112,10 +112,10 @@ h6 {
   }
   .content_chose {
     p {
-      font-size: 8px;
+      font-size: 7px;
     }
     h6 {
-      font-size: 9.6px;
+      font-size: 9px;
     }
     span {
       font-size: 45px;
@@ -142,12 +142,12 @@ h6 {
   }
   .teams {
     max-width: 19%;
-    line-height: 20px;
+    line-height: 16px;
     h6 {
       font-size: 8px;
     }
     p {
-      font-size: 6.6px;
+      font-size: 6px;
     }
   }
   .footer {

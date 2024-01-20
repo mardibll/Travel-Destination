@@ -43,7 +43,7 @@ export const teams = [
   },
   {
     profil: require("../../images/about/image5.png"),
-    name: "Rahardianysah ",
+    name: "Rahardi anysah ",
     skill: "International Relations ",
   },
   {
