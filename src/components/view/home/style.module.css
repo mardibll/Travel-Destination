@@ -31,9 +31,13 @@
 }
 .content {
   height: 720px;
-
   position: absolute;
+  width: 100%;
   top: 0px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 .card {
   display: flex;
@@ -85,6 +89,17 @@
 }
 
 @media (max-device-width: 600px) {
+  .explore {
+    height: 50%;
+  }
+  .absolut {
+    height: 300px;
+  }
+  .content {
+    img {
+      height: 50%;
+    }
+  }
   .card {
     display: flex;
     justify-content: space-between;

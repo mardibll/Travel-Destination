@@ -10,6 +10,14 @@ export default function Header() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(!show);
   const [path, setpath] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  console.log(isActive);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
+    });
+  });
   let location = useLocation();
   useEffect(() => {
     if (location.pathname == "/") {
@@ -27,9 +35,14 @@ export default function Header() {
     };
   }, [location]);
   return (
-    <div className={style.container}>
+    <div
+      className={style.container}
+      style={{
+        backgroundColor: isActive ? "rgb(236, 236, 236)" : false,
+      }}
+    >
       <div>
-        <h2 style={{ color: path ? "white" : "#295943" }}> travelaja</h2>
+        <h2 style={{ color: isActive ? "#43b97f" : "white" }}> travelaja</h2>
       </div>
 
       {togle ? (
@@ -42,22 +55,31 @@ export default function Header() {
             justifyContent: "space-between",
           }}
         >
-          <Link className={path ? style.cltrue : style.clfalse} to="/">
+          <Link className={isActive ? style.linkScrool : style.link} to="/">
             Home
           </Link>
-          <Link className={path ? style.cltrue : style.clfalse} to="/news">
+          <Link className={isActive ? style.linkScrool : style.link} to="/news">
             Discover
           </Link>
-          <Link className={path ? style.cltrue : style.clfalse} to="/services">
+          <Link
+            className={isActive ? style.linkScrool : style.link}
+            to="/services"
+          >
             Services
           </Link>
-          <Link className={path ? style.cltrue : style.clfalse} to="/news">
+          <Link className={isActive ? style.linkScrool : style.link} to="/news">
             News
           </Link>
-          <Link className={path ? style.cltrue : style.clfalse} to="/about">
+          <Link
+            className={isActive ? style.linkScrool : style.link}
+            to="/about"
+          >
             About Us
           </Link>
-          <Link className={path ? style.cltrue : style.clfalse} to="/services">
+          <Link
+            className={isActive ? style.linkScrool : style.link}
+            to="/services"
+          >
             Contact
           </Link>
         </nav>
@@ -105,7 +127,11 @@ export default function Header() {
               >
                 Services
               </Link>
-              <Link className={style.clfalse} to="/services" onClick={handleClose}>
+              <Link
+                className={style.clfalse}
+                to="/services"
+                onClick={handleClose}
+              >
                 News
               </Link>
               <Link className={style.clfalse} to="/about" onClick={handleClose}>

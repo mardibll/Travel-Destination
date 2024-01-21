@@ -5,8 +5,13 @@
   align-items: center;
   position: relative;
   z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  /* background-color: rgb(236, 236, 236); */
+  /* background-color: rgb(109, 109, 237); */
 }
-.cltrue {
+.link {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -15,14 +20,16 @@
     color: #43b97f;
   }
 }
-.clfalse {
+.linkScrool {
   text-decoration: none;
-  color: black;
+  color: #43b97f;
   font-weight: bold;
+  cursor: pointer;
   &:hover {
-    color: #43b97f;
+    color: rgb(109, 109, 237);
   }
 }
+
 .modal_right {
   background-color: transparent;
   padding-right: 200px;

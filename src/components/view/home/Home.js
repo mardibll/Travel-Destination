@@ -10,13 +10,7 @@ export default function Home() {
     <div>
       <div className={styles.absolut}>
         <div className={styles.content}>
-          <img
-            src={image}
-            style={{
-              width: "100vw",
-              height: "100%",
-            }}
-          />
+          <img src={image} />
           <div className={styles.explore}>
             <div className={styles.explore_content}>
               <h2>Explore the world with a smile</h2>
@@ -48,7 +42,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div style={{ textAlign: "center",paddingTop:50 }}>
+      <div style={{ textAlign: "center", paddingTop: 50 }}>
         <p style={{ color: "#295943", fontWeight: "bold" }}>top destination</p>
         <p style={{ fontSize: 27, fontWeight: "bold" }}>Discover your love</p>
       </div>
